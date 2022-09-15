@@ -1,9 +1,9 @@
 import { Amplify, Auth } from 'aws-amplify';
 import awsconfig from './aws-exports';
-Amplify.configure(awsconfig);
 import { withAuthenticator } from '@aws-amplify/ui-react';
 import '@aws-amplify/ui-react/styles.css';
 
+Amplify.configure(awsconfig);
 function App({ signOut, user }) {
   return (
     <>
